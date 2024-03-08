@@ -1,0 +1,125 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #81878e;
+    padding: 20px;
+    text-align: center;
+}
+
+header img {
+    width: 200px;
+    height: auto;
+}
+
+.conteudo {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #343a40;
+    text-align: center;
+}
+
+.form-container {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+form {
+    display: inline-block;
+    background-color: #f1f1f1;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="text"] {
+    width: 100%;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button[type="submit"] {
+    background-color: #343a40;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #23272b;
+}
+
+.select-container {
+    text-align: center;
+}
+
+.select-box {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.mensagem-sucesso {
+    text-align-last: center;
+    font-size: small;
+    margin-bottom: 5px;
+}
+
+
+
+    /* Estilos para dispositivos menores */
+    @media screen and (max-width: 360px) {
+        .form-container {
+            width: 90%;
+            margin: 0 auto 20px auto;
+        }
+
+        .select-container {
+            width: 90%;
+            margin: 0 auto;
+        }
+    }
+
+    /* Estilos específicos do formulário */
+    .form-container {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    form {
+        display: inline-block;
+        background-color: #f1f1f1;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    label {
+        display: block;
+        margin-bottom: 10px;
+    }
+
