@@ -1,13 +1,10 @@
-<?php 
-    $hostname = "localhost";
-    $bancodedados = "cancelamentos";
-    $usuario = "root";
-    $senha = "";
+<?php
+$hostname = "localhost";
+$database = "clientes";
+$username = "root";
+$password = "";
 
-    $mysqli = new mysqli ($hostname, $usuario, $senha, $bancodedados);
-    if ($mysqli->connect_errno) {
-        echo "falha ao conectar:(" . $mysqli->connect_errno . ")" . $mysqli->connect_errno;
-    } else 
-        echo "Conexão estabelecida com sucesso";
-
-?>
+$mysqli = new mysqli($hostname, $username, $password, $database);
+if ($mysqli->connect_error) {
+    die("Erro na conexão com o banco de dados: " . $mysqli->connect_error);
+}

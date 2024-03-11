@@ -1,125 +1,189 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f8f9fa;
-    margin: 0;
-    padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 0;
 }
 
 header {
-    background-color: #81878e;
-    padding: 20px;
-    text-align: center;
+  background-color: #81878e;
+  padding: 20px;
+  text-align: center;
 }
 
 header img {
-    width: 200px;
-    height: auto;
+  width: 200px;
+  height: auto;
 }
 
 .conteudo {
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 h2 {
-    color: #343a40;
-    text-align: center;
+  color: #343a40;
+  text-align: center;
 }
 
 .form-container {
-    text-align: center;
-    margin-bottom: 30px;
+  text-align: center;
+  margin-bottom: 30px;
 }
 
 form {
-    display: inline-block;
-    background-color: #f1f1f1;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #f1f1f1;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 label {
-    display: block;
-    margin-bottom: 10px;
+  display: block;
+  margin-bottom: 10px;
+  margin-right: 10px; /* Adicionado um espaçamento entre os labels */
 }
 
-input[type="text"] {
-    width: 100%;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+input[type="text"],
+input[type="email"] {
+  flex: 1; /* Faz com que os campos de entrada ocupem o espaço restante */
+  margin-bottom: 10px; /* Alterado de 20px para 10px para reduzir o espaçamento */
+  margin-right: 10px; /* Adicionado um espaçamento entre os campos de entrada */
+  padding: 10px; /* Adicionado padding para melhorar a aparência */
+  border: 1px solid #ccc;
+  border-radius: 4px;
 }
 
 button[type="submit"] {
-    background-color: #343a40;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
+  background-color: #343a40;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
 button[type="submit"]:hover {
-    background-color: #23272b;
+  background-color: #23272b;
 }
 
-.select-container {
-    text-align: center;
+.registros {
+  margin-top: 20px; /* Adicionado um espaçamento entre o formulário e a lista de registros */
 }
 
-.select-box {
-    display: inline-block;
-    margin-right: 20px;
+/* Estilos para dispositivos menores */
+@media screen and (max-width: 360px) {
+  .form-container {
+    width: 90%;
+    margin: 0 auto 20px auto;
+  }
+
+  .registros {
+    width: 90%;
+    margin: 0 auto;
+  }
 }
 
-select {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+.button-28 {
+  appearance: none;
+  background-color: #ff6801;
+  border: 2px solid #da5700;
+  border-radius: 15px;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Roobert, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
+  min-height: 60px;
+  min-width: 0;
+  outline: none;
+  padding: 16px 24px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(0.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 100%;
+  will-change: transform;
 }
 
-.mensagem-sucesso {
-    text-align-last: center;
-    font-size: small;
-    margin-bottom: 5px;
+.button-28:disabled {
+  pointer-events: none;
 }
 
+.button-28:hover {
+  color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
 
+.button-28:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
 
-    /* Estilos para dispositivos menores */
-    @media screen and (max-width: 360px) {
-        .form-container {
-            width: 90%;
-            margin: 0 auto 20px auto;
-        }
+/* Adicione este código ao seu arquivo index.css */
 
-        .select-container {
-            width: 90%;
-            margin: 0 auto;
-        }
-    }
+.table-container {
+  overflow-x: auto;
+}
 
-    /* Estilos específicos do formulário */
-    .form-container {
-        text-align: center;
-        margin-bottom: 30px;
-    }
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
 
-    form {
-        display: inline-block;
-        background-color: #f1f1f1;
-        padding: 20px;
-        border-radius: 8px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    }
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
 
-    label {
-        display: block;
-        margin-bottom: 10px;
-    }
+th {
+  background-color: #f2f2f2;
+}
 
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.delete-button {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.delete-button:hover {
+  background-color: #d32f2f;
+}
+
+/* Adicione este código ao seu arquivo index.css */
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center; /* Centraliza o texto */
+}
+
+th {
+  background-color: #f2f2f2;
+}
